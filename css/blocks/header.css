@@ -1,0 +1,195 @@
+.header {
+	height: 965px;
+	background-image: image-set(
+		url(../../img/img/backgroung-tennis.jpg) 1x,
+		url(../../img/img/background-tennis@2x.jpg) 2x
+	);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom left;
+}
+.header__top {
+	width: 100%;
+	margin: 0 auto;
+	padding: 30px 0;
+	display: flex;
+	justify-content: center;
+	gap: 124px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.header_icon {
+	width: 154px;
+}
+.header__nav {
+	display: flex;
+	align-items: center;
+}
+.header__list {
+	display: flex;
+	column-gap: 40px;
+}
+
+.header__item a {
+	padding-bottom: 20px;
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 14px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid transparent;
+	transition: border 0.2s ease-in;
+	white-space: nowrap;
+}
+.header__item a:hover {
+	color: #fff;
+	border-bottom: 2px solid #fff;
+	border-radius: 5px;
+}
+.header__socials {
+	display: flex;
+	align-items: center;
+	column-gap: 8px;
+}
+.header__title {
+	font-size: 45px;
+	padding-top: 200px;
+	color: #fff;
+	font-family: var(--font-family-700);
+}
+.header__play {
+	padding-top: 60px;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+.header__play-border {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.header__play-btn {
+	width: 64px;
+	height: 64px;
+	background-color: var(--color-accent);
+	border-radius: 50%;
+	transition: 0.2s ease-in;
+}
+.header__play-btn:hover {
+	background-color: #000000;
+}
+.header__play-text {
+	font-size: 18px;
+	color: #fff;
+	font-family: var(--font-family-700);
+}
+.header__card {
+	padding-top: 202px;
+	display: flex;
+
+	gap: 20px;
+}
+.header_card-item {
+	position: relative;
+	max-width: 315px;
+	width: 100%;
+	height: 151px;
+	background-color: var(--color-accent);
+	color: #fff;
+	border: 2px solid transparent;
+	transition: border 0.2s ease-in;
+}
+.header_card-item:hover {
+	border: 2px solid #fff;
+}
+.header_card-item::before {
+	position: absolute;
+	display: block;
+	content: '';
+	background: url(../../img/svg/share-icon.svg);
+	width: 20px;
+	height: 20px;
+
+	top: 77px;
+	right: 40px;
+}
+.header_card-item p {
+	padding: 35px 0 17px 35px;
+	font-size: 18px;
+	font-family: var(--font-family-500);
+}
+.header__card-link {
+	display: block;
+	font-size: 24px;
+	padding-left: 35px;
+	font-family: var(--font-family-500);
+	color: #fff;
+	transition: color 0.2s ease-in;
+}
+.header__card-link:hover {
+	color: var(--color-sub-accent);
+}
+@media (max-width: 1280px) {
+	.header__list {
+		column-gap: 10px;
+	}
+	.header__top {
+		gap: 50px;
+	}
+	.header_card-item::before {
+		display: none;
+	}
+}
+@media (max-width: 930px) {
+	.header__top {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.header__list {
+		column-gap: 30px;
+	}
+	.header__title {
+		padding-top: 100px;
+	}
+	.header__card {
+		padding-top: 100px;
+	}
+}
+@media (max-width: 700px) {
+	.header__title {
+		padding-top: 10px;
+		font-size: 40px;
+	}
+	.header__list {
+		display: grid;
+		grid-template-columns: repeat(4, 2fr);
+		gap: 20px;
+	}
+	.header__top {
+		padding: 0 30px;
+		align-items: center;
+	}
+	.header__socials {
+		display: none;
+	}
+	.header__item a {
+		font-size: 20px;
+	}
+	.header__card {
+		padding-top: 10px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.header__play {
+		display: none;
+	}
+}
+@media (max-width: 500px) {
+	.header__list {
+		display: grid;
+		grid-template-columns: repeat(2, 2fr);
+		gap: 20px;
+	}
+}

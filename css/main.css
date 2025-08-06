@@ -1,0 +1,16 @@
+/* base */
+@import '../css/base.css';
+
+/* reset */
+@import '../css/reset.css';
+
+/* fonts */
+@import '../Fonts/stylesheet.css';
+
+/* blocks */
+@import '../css/blocks/header.css';
+@import '../css/blocks/section_card.css';
+@import '../css/blocks/section_info.css';
+@import '../css/blocks/section_trainers.css';
+@import '../css/blocks/section__pr-and-serv.css';
+@import '../css/blocks/footer.css';

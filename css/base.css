@@ -1,0 +1,18 @@
+:root {
+	--color-accent: #8d86c9;
+	--color-sub-accent: #f7ece1;
+	--color-dark-alternate: #333333;
+	--font-family-400: 'Gilroy-400';
+	--font-family-500: 'Gilroy-500';
+	--font-family-600: 'Gilroy-600';
+	--font-family-700: 'Gilroy-700';
+}
+.container {
+	max-width: 1300px;
+	/* padding: 0 30px; */
+	width: 100%;
+	margin: 0 auto;
+}
+body {
+	font-family: var(--font-family-500);
+}
