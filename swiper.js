@@ -8,7 +8,7 @@ const swiper = new Swiper('.swiper', {
 	pagination: {
 		el: '.swiper-pagination',
 	},
-
+  grabCursor: true,
 	// Navigation arrows
 	navigation: {
 		nextEl: '.next',

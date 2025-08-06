@@ -2,7 +2,7 @@ const swiper2 = new Swiper('.swiper2', {
 	// Optional parameters
 	direction: 'horizontal',
 	loop: false, // обычно при множественных слайдах лучше отключить loop
-	slidesPerView: 2,
+	slidesPerView: 1,
 
 	// If we need pagination
 	pagination: {
@@ -14,7 +14,7 @@ const swiper2 = new Swiper('.swiper2', {
 		nextEl: '.next2',
 		prevEl: '.prev2',
 	},
-
+  grabCursor: true,
 	// And if we need scrollbar
 	scrollbar: {
 		el: '.swiper-scrollbar',
