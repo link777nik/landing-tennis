@@ -41,7 +41,6 @@
 	color: var(--color-sub-accent);
 }
 .service {
-	min-width: 636px;
 	max-width: 636px;
 	overflow-x: hidden;
 }
